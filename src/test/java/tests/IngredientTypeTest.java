@@ -1,5 +1,6 @@
 package tests;
 
+import org.junit.Assert;
 import org.junit.Test;
 import praktikum.IngredientType;
 
@@ -9,9 +10,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class IngredientTypeTest {
     @Test
-    public void values() {
-        assertThat(IngredientType.SAUCE, is(notNullValue()));
-        assertThat(IngredientType.FILLING, is(notNullValue()));
+    public void ingredientTypeValuesTest() {
+        Assert.assertEquals(IngredientType.SAUCE.toString(), "SAUCE");
+        Assert.assertEquals(IngredientType.FILLING.toString(), "FILLING");
     }
 
 }
